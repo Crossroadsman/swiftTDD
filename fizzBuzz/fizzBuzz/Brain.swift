@@ -27,5 +27,14 @@ class Brain {
         return isDivisibleByN(number, divisor: 15)
     }
     
+    func response(number: Int) -> String {
+        switch number {
+        case _ where isDivisibleByThree(number):
+            return "fizz"
+        default:
+            return String(number)
+        }
+    }
+    
 }
 
