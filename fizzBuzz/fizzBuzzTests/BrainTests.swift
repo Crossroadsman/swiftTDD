@@ -89,4 +89,9 @@ class BrainTests: XCTestCase {
         XCTAssertEqual(result, "1", ".response(1) should be '1' (as a String)")
     }
     
+    func testStringNumberNotOneIfNotOne() {
+        let result = brain.response(2)
+        XCTAssertNotEqual(result, "1", ".response(!1) should not be String(1)")
+    }
+    
 }
