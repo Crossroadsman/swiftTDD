@@ -29,8 +29,12 @@ class Brain {
     
     func response(number: Int) -> String {
         switch number {
+        case _ where isDivisibleByFifteen(number):
+            return "fizzbuzz"
         case _ where isDivisibleByThree(number):
             return "fizz"
+        case _ where isDivisibleByFive(number):
+            return "buzz"
         default:
             return String(number)
         }

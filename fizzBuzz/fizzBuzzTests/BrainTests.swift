@@ -64,9 +64,24 @@ class BrainTests: XCTestCase {
         XCTAssertNotEqual(result, "fizz", ".response(1) should not be 'fizz'")
     }
     
-    func testBuzzFromThree() {
+    func testBuzzFromFive() {
         let result = brain.response(5)
         XCTAssertEqual(result, "buzz", ".response(5) should be 'buzz'")
+    }
+    
+    func testBuzzFromNotFive() {
+        let result = brain.response(1)
+        XCTAssertNotEqual(result, "buzz", ".response(1) should not be 'buzz'")
+    }
+    
+    func testFizzBuzzFromFifteen() {
+        let result = brain.response(15)
+        XCTAssertEqual(result, "fizzbuzz", ".response(15) should be 'fizzbuzz'")
+    }
+    
+    func testFizzBuzzFromNotFifteen() {
+        let result = brain.response(1)
+        XCTAssertNotEqual(result, "fizzbuzz", ".response(1) should not be 'fizzbuzz'")
     }
     
 }
