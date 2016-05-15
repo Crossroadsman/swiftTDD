@@ -24,34 +24,34 @@ class BrainTests: XCTestCase {
     let brain = Brain()
 
     func testDivisibleByThree() {
-        let result = brain.isDivisibleByThree(3)
-        XCTAssertTrue(result, ".isDivisibleByThree(3) should be true")
+        let result = brain.isDivisibleByN(3, N: 3)
+        XCTAssertTrue(result, ".isDivisibleByN(3, N: 3) should be true")
     }
     
     func testNotDivisibleByThree() {
-        let result = brain.isDivisibleByThree(1)
-        XCTAssertFalse(result, ".isDivisibleByThree(1) should be false")
+        let result = brain.isDivisibleByN(1, N: 3)
+        XCTAssertFalse(result, ".isDivisibleByN(1, N: 3) should be false")
     }
     
     func testDivisibleByFive() {
-        let result = brain.isDivisibleByFive(5)
-        XCTAssertTrue(result, ".isDivisibleByFive(5) should be true")
+        let result = brain.isDivisibleByN(5, N: 5)
+        XCTAssertTrue(result, ".isDivisibleByN(5, N: 5) should be true")
     }
     
     func testNotDivisibleByFive() {
-        let result = brain.isDivisibleByFive(1)
+        let result = brain.isDivisibleByN(1, N: 5)
         XCTAssertFalse(result, ".isDivisibleByFive(1) should be false")
     }
     
     func testDivisibleByFifteen() {
         // satisfies the fizzbuzz (3 and 5) case
-        let result = brain.isDivisibleByFifteen(15)
-        XCTAssertTrue(result, ".isDivisibleByFifteen(15) should be true")
+        let result = brain.isDivisibleByN(15, N: 15)
+        XCTAssertTrue(result, ".isDivisibleByN(15) should be true")
     }
     
     func testNotDivisibleByFifteen() {
-        let result = brain.isDivisibleByFifteen(1)
-        XCTAssertFalse(result, ".isDivisibleByFifteen(1) should be false")
+        let result = brain.isDivisibleByN(1, N: 15)
+        XCTAssertFalse(result, ".isDivisibleByN(1, N: 15) should be false")
     }
     
     func testFizzFromThree() {
