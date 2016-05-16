@@ -41,5 +41,41 @@ class GameTests: XCTestCase {
         let result = game.play("fizz")
         XCTAssertFalse(result, "the first play should not be 'fizz'")
     }
+    
+    func testBuzzOnMoveFive() {
+        game.score = 4
+        let result = game.play("buzz")
+        XCTAssertTrue(result, "after four rounds, next play should be 'buzz'")
+    }
+    
+    func testNotBuzzOnMoveSix() {
+        game.score = 5
+        let result = game.play("buzz")
+        XCTAssertFalse(result, "after five rounds, next play should not be 'buzz'")
+    }
+    
+    func testFizzBuzzOnMoveFifteen() {
+        game.score = 14
+        let result = game.play("fizzbuzz")
+        XCTAssertTrue(result, "after fourteen rounds, next play should be 'fizzbuzz'")
+    }
+    
+    func testNotFizzBuzzOnMoveSixteen() {
+        game.score = 15
+        let result = game.play("fizzbuzz")
+        XCTAssertFalse(result, "after fifteen rounds, next play should not be 'fizzbuzz'")
+    }
+    
+    func testNumberOnMoveOne() {
+        game.score = 0
+        let result = game.play("1")
+        XCTAssertTrue(result, "after 0 rounds, next play should be number 1 (as String)")
+    }
+    
+    func testNotNumberOnMoveThree() {
+        game.score = 2
+        let result = game.play("3")
+        XCTAssertFalse(result, "after 2 rounds, next play should not be number")
+    }
 
 }
