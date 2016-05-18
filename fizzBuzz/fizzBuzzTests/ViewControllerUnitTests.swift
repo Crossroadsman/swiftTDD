@@ -37,9 +37,9 @@ class ViewControllerUnitTests: XCTestCase {
         super.tearDown()
     }
     
-    func test() {
-        XCTAssertTrue(true)
+    func testMoveOneIncrementsScore() {
+        viewController.play("1")
+        let newScore = viewController.gameScore
+        XCTAssertEqual(newScore, 1, "score should be 1 after "1" was played")
     }
-
-    
 }
