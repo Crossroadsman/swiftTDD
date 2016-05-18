@@ -10,15 +10,35 @@
 import XCTest
 
 class ViewControllerUnitTests: XCTestCase {
+    
+    /*
+     iOS's architecture requires that we initialise our initial (main) storyboard and instantiate our viewcontroller from there
+     */
 
+    var viewController: ViewController!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        // see
+        // https://www.natashatherobot.com/ios-testing-view-controllers-swift/
+        // for more explanation of this code
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        viewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController // what type would it be without this casting?
+        UIApplication.sharedApplication().keyWindow!.rootViewController = viewController
+        
+        let _ = viewController.view
+        
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+
+        
         super.tearDown()
+    }
+    
+    func test() {
+        XCTAssertTrue(true)
     }
 
     
