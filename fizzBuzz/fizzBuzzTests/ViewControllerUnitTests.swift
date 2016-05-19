@@ -50,4 +50,8 @@ class ViewControllerUnitTests: XCTestCase {
         XCTAssertEqual(newScore, 2, "score should be 2 after '1' was successfully played")
     }
     
+    func testHasAGame() {
+        XCTAssertNotNil(viewController.game, "viewController should have a game")
+    }
+    
 }

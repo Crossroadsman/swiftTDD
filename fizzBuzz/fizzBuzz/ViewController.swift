@@ -10,15 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let gameScore = 1
+    var game: Game?
+    
+    var gameScore: Int?
     
     func play(play: String) {
-        print("playing")
+        let newScore = game.play(move)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        game = Game()
     }
 
     override func didReceiveMemoryWarning() {
