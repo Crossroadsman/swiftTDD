@@ -40,6 +40,14 @@ class ViewControllerUnitTests: XCTestCase {
     func testMoveOneIncrementsScore() {
         viewController.play("1")
         let newScore = viewController.gameScore
-        XCTAssertEqual(newScore, 1, "score should be 1 after "1" was played")
+        XCTAssertEqual(newScore, 1, "score should be 1 after '1' was played")
     }
+    
+    func testMove2IncrementScore() {
+        viewController.play("1")
+        viewController.play("2")
+        let newScore = viewController.gameScore
+        XCTAssertEqual(newScore, 2, "score should be 2 after '1' was successfully played")
+    }
+    
 }
