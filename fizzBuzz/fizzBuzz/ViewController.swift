@@ -15,7 +15,11 @@ class ViewController: UIViewController {
     var gameScore: Int?
     
     func play(play: String) {
-        let newScore = game.play(move)
+        guard let unwrappedGame = game else {
+            print("warning: game is nil!")
+            return
+        }
+        let newScore = unwrappedGame.play(play)
     }
 
     override func viewDidLoad() {
