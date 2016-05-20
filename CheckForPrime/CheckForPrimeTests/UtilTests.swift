@@ -1,16 +1,15 @@
 //
-//  CheckForPrimeTests.swift
-//  CheckForPrimeTests
+//  UtilTests.swift
+//  CheckForPrime
 //
 //  Created by Alex Koumparos on 19/05/16.
 //  Copyright © 2016 Alex Koumparos. All rights reserved.
 //
 
 import XCTest
-@testable import CheckForPrime
 
-class CheckForPrimeTests: XCTestCase {
-    
+class UtilTests: XCTestCase {
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,14 +19,17 @@ class CheckForPrimeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testTwoIsPrime() {
-        XCTAssertTrue(Util().isPrime(2), "isPrime() should return true for 2")
+
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func testOneIsNotPrime() {
-        XCTAssertFalse(Util().isPrime(1), "isPrime() should return false for 1")
+
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measureBlock {
+            // Put the code you want to measure the time of here.
+        }
     }
-    
-    
+
 }
