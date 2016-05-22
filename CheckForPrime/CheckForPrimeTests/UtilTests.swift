@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import CheckForPrime
 
 class UtilTests: XCTestCase {
 
@@ -20,16 +21,24 @@ class UtilTests: XCTestCase {
         super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTwoIsPrime() {
+        XCTAssertTrue(Util().isPrime(2), "isPrime() should return true for 2")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testOneIsNotPrime() {
+        XCTAssertFalse(Util().isPrime(1), "isPrime() should return false for 1")
+    }
+    
+    func testThreeIsPrime() {
+        XCTAssertTrue(Util().isPrime(3), "isPrime(3) should return true")
+    }
+    
+    func testFourIsNotPrime() {
+        XCTAssertFalse(Util().isPrime(4), "isPrime(4) should return false")
+    }
+    
+    func testFiveIsPrime() {
+        XCTAssertTrue(Util().isPrime(5), "isPrime(5) should return true")
     }
 
 }

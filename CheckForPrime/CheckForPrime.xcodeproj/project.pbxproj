@@ -12,7 +12,6 @@
 		4EBD7F291CEE8B0C00BEDB2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD7F271CEE8B0C00BEDB2A /* Main.storyboard */; };
 		4EBD7F2B1CEE8B0C00BEDB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD7F2A1CEE8B0C00BEDB2A /* Assets.xcassets */; };
 		4EBD7F2E1CEE8B0C00BEDB2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD7F2C1CEE8B0C00BEDB2A /* LaunchScreen.storyboard */; };
-		4EBD7F391CEE8B0C00BEDB2A /* CheckForPrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7F381CEE8B0C00BEDB2A /* CheckForPrimeTests.swift */; };
 		4EBD7F441CEE8B0C00BEDB2A /* CheckForPrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7F431CEE8B0C00BEDB2A /* CheckForPrimeUITests.swift */; };
 		4EBD7F521CEE8B8400BEDB2A /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7F511CEE8B8400BEDB2A /* UtilTests.swift */; };
 		4EBD7F541CEED05600BEDB2A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7F531CEED05600BEDB2A /* Util.swift */; };
@@ -44,7 +43,6 @@
 		4EBD7F2D1CEE8B0C00BEDB2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EBD7F2F1CEE8B0C00BEDB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBD7F341CEE8B0C00BEDB2A /* CheckForPrimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckForPrimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EBD7F381CEE8B0C00BEDB2A /* CheckForPrimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForPrimeTests.swift; sourceTree = "<group>"; };
 		4EBD7F3A1CEE8B0C00BEDB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBD7F3F1CEE8B0C00BEDB2A /* CheckForPrimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckForPrimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBD7F431CEE8B0C00BEDB2A /* CheckForPrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForPrimeUITests.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		4EBD7F371CEE8B0C00BEDB2A /* CheckForPrimeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EBD7F381CEE8B0C00BEDB2A /* CheckForPrimeTests.swift */,
 				4EBD7F511CEE8B8400BEDB2A /* UtilTests.swift */,
 				4EBD7F3A1CEE8B0C00BEDB2A /* Info.plist */,
 			);
@@ -272,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EBD7F391CEE8B0C00BEDB2A /* CheckForPrimeTests.swift in Sources */,
 				4EBD7F521CEE8B8400BEDB2A /* UtilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +486,7 @@
 				4EBD7F4A1CEE8B0C00BEDB2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EBD7F4B1CEE8B0C00BEDB2A /* Build configuration list for PBXNativeTarget "CheckForPrimeTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +495,7 @@
 				4EBD7F4D1CEE8B0C00BEDB2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EBD7F4E1CEE8B0C00BEDB2A /* Build configuration list for PBXNativeTarget "CheckForPrimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +504,7 @@
 				4EBD7F501CEE8B0C00BEDB2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

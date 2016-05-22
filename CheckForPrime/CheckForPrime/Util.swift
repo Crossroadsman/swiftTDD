@@ -42,8 +42,16 @@ class PrimeFactors {
 
 class Util {
     
+    
     func isPrime(n: Int) -> Bool {
-        return true
+        
+        var primeFlag: Bool = true
+        
+        if ((n == 2) || (n == 3)) {
+            return primeFlag
+        }
+        
+        return (n == 2) || (n == 3)
     }
     
 }
